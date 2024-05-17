@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner Bros Feedback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+		   .header {
+      padding: 20px;
+    }
+    .logo {
+      max-width: 180px;
+      float: left;
+    }
+	   .series {
+      margin-top: 60px;
+    }
+    .series h2 {
+      text-align: left;
+    }
+    .series .row {
+      margin-top: 20px;
+    }
+    .series img {
+      max-width: 30%;
+      height: auto;
+      margin-right: 10px;
+    }
+    footer {
+      text-align: left;
+      margin-top: 30px;
+      padding: 20px 0;
+      background-color: Black;
+	  color: white;
+    }
+	.navbar {
+		overflow:hidden;
+		background-color:#343a40
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+		.navbar a{
+		float:left;
+		display:block;
+		color:#ffffff;
+		text-align:center;
+		padding:14px 20px;
+		text-decoration:none;
+		text-transform:uppercase;
+	}
+	.navbar a:hover {
+		background-color:#dc3545;
+	}
+	body {
+		color: white;
+		}
+		.feedback-form {
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+			margin:auto;
+        }
+		.feedback-form h2 {
+            margin-top: 0;
+        }
+        .feedback-form input, .feedback-form textarea {
+            width: 200%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .feedback-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+        }
+        .feedback-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+<div class="container header">
+  <img src="images/WarnerBros.jpeg" class="logo" alt="Warner Bros Logo">
+</div>
+<nav class="navbar">
+	<a href="index.html">Home</a>
+	<a href="Movies2.html">Movies</a>
+	<a href="TV Shows.html">TV Shows</a>
+	<a href="Merchandise.html">Merchandise</a>
+	<a href="Feedback.html">Feedback</a>
+	<input type="search" name="search" placeholder="Search..." style="margin-left: 10px;">
+</nav>
+<div class="feedback-form">
+        <h2>Feedback</h2>
+        <form action="/submit-feedback" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+<footer>
+  <p>©2024 Warner Bros. All rights reserved.</p>
+</footer>
+</body>
+</html>
